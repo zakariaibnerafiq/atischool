@@ -1,300 +1,540 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>American International Tutorial (AIT) - Quality British Education in Bangladesh</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      American International Tutorial (AIT) - Quality British Education in
+      Bangladesh
+    </title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Roboto+Slab:wght@400;700&display=swap" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Roboto+Slab:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
     <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    fontFamily: {
-                        sans: ['Open Sans', 'sans-serif'],
-                        serif: ['Roboto Slab', 'serif'],
-                    },
-                    colors: {
-                        aitblue: '#1a4b8c',
-                        aityellow: '#f9a825',
-                        aitgreen: '#2e7d32',
-                    }
-                }
-            }
-        }
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ["Open Sans", "sans-serif"],
+              serif: ["Roboto Slab", "serif"],
+            },
+            colors: {
+              aitblue: "#1a4b8c",
+              aityellow: "#f9a825",
+              aitgreen: "#2e7d32",
+            },
+          },
+        },
+      };
     </script>
     <style>
-        .sticky-nav {
-            position: fixed;
-            top: 0;
-            width: 100%;
-            z-index: 1000;
-            transition: all 0.3s ease;
-        }
-        .nav-hidden {
-            transform: translateY(-100%);
-        }
-        .nav-visible {
-            transform: translateY(0);
-        }
+      .sticky-nav {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        z-index: 1000;
+        transition: all 0.3s ease;
+      }
     </style>
-</head>
-<body class="font-sans bg-gray-50">
+  </head>
+  <body class="font-sans bg-gray-50">
     <!-- Navigation -->
     <nav id="navbar" class="bg-white shadow-md sticky-nav">
-        <div class="container mx-auto px-6 py-3 flex justify-between items-center">
-            <div class="flex items-center space-x-2">
-                <div class="bg-aitblue text-white p-2 rounded-lg font-bold text-xl">AIT</div>
-                <span class="text-2xl font-bold text-aitblue">American International Tutorial</span>
-            </div>
-            <div class="hidden md:flex space-x-8">
-                <a href="#" class="text-aitblue font-semibold hover:text-aityellow">Home</a>
-                <a href="#" class="text-gray-600 hover:text-aitblue">About</a>
-                <a href="#" class="text-gray-600 hover:text-aitblue">Curriculum</a>
-                <a href="#" class="text-gray-600 hover:text-aitblue">Admissions</a>
-                <a href="#" class="text-gray-600 hover:text-aitblue">Contact</a>
-            </div>
-            <button id="mobile-menu-button" class="md:hidden focus:outline-none">
-                <svg class="w-6 h-6 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
-                </svg>
-            </button>
+      <div
+        class="container mx-auto px-6 py-3 flex justify-between items-center"
+      >
+        <div class="flex items-center space-x-2">
+          <img class="h-20 w-20" src="icons/logo.svg" alt="AIT logo">
+          <span class="text-2xl font-bold text-aitblue"
+            >American International Tutorial</span
+          >
         </div>
-        <!-- Mobile menu -->
-        <div id="mobile-menu" class="hidden md:hidden bg-white border-t">
-            <div class="container mx-auto px-6 py-3 flex flex-col space-y-3">
-                <a href="#" class="text-aitblue font-semibold hover:text-aityellow">Home</a>
-                <a href="#" class="text-gray-600 hover:text-aitblue">About</a>
-                <a href="#" class="text-gray-600 hover:text-aitblue">Curriculum</a>
-                <a href="#" class="text-gray-600 hover:text-aitblue">Admissions</a>
-                <a href="#" class="text-gray-600 hover:text-aitblue">Contact</a>
-            </div>
+        <div class="hidden md:flex space-x-8">
+          <a href="#" class="text-aitblue font-semibold hover:text-aityellow"
+            >Home</a
+          >
+          <a href="#" class="text-gray-600 hover:text-aitblue">About</a>
+          <a href="#" class="text-gray-600 hover:text-aitblue">Curriculum</a>
+          <a href="#" class="text-gray-600 hover:text-aitblue">Admissions</a>
+          <a href="#" class="text-gray-600 hover:text-aitblue">Contact</a>
         </div>
+        <button id="mobile-menu-button" class="md:hidden focus:outline-none">
+          <svg
+            class="w-6 h-6 text-gray-600"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M4 6h16M4 12h16M4 18h16"
+            ></path>
+          </svg>
+        </button>
+      </div>
+      <!-- Mobile menu -->
+      <div id="mobile-menu" class="hidden md:hidden bg-white border-t">
+        <div class="container mx-auto px-6 py-3 flex flex-col space-y-3">
+          <a href="#" class="text-aitblue font-semibold hover:text-aityellow"
+            >Home</a
+          >
+          <a href="#" class="text-gray-600 hover:text-aitblue">About</a>
+          <a href="#" class="text-gray-600 hover:text-aitblue">Curriculum</a>
+          <a href="#" class="text-gray-600 hover:text-aitblue">Admissions</a>
+          <a href="#" class="text-gray-600 hover:text-aitblue">Contact</a>
+        </div>
+      </div>
     </nav>
 
     <!-- Hero Section -->
-    <section class="bg-gradient-to-r from-aitblue to-blue-800 text-white pt-32 pb-20">
-        <div class="container mx-auto px-6 text-center">
-            <h1 class="text-4xl md:text-5xl font-serif font-bold mb-6">British Edexcel Education in Bangladesh</h1>
-            <p class="text-xl md:text-2xl mb-8 max-w-3xl mx-auto">Preparing students for global success through the internationally recognized Edexcel curriculum combined with Islamic values.</p>
-            <div class="flex flex-col sm:flex-row justify-center gap-4">
-                <a href="#" class="bg-aityellow hover:bg-yellow-600 text-aitblue font-bold py-3 px-8 rounded-lg text-lg transition duration-300">Apply Now</a>
-                <a href="#" class="bg-transparent hover:bg-white hover:text-aitblue border-2 border-white text-white font-bold py-3 px-8 rounded-lg text-lg transition duration-300">Learn More</a>
-            </div>
+    <section
+      class="bg-gradient-to-r from-aitblue to-blue-800 text-white pt-[12rem] pb-20"
+    >
+      <div class="container mx-auto px-6 text-center">
+        <h1 class="text-4xl md:text-5xl font-serif font-bold mb-6">
+          British Edexcel Education in Bangladesh
+        </h1>
+        <p class="text-xl md:text-2xl mb-8 max-w-3xl mx-auto">
+          Preparing students for global success through the internationally
+          recognized Edexcel curriculum combined with Islamic values.
+        </p>
+        <div class="flex flex-col sm:flex-row justify-center gap-4">
+          <a
+            href="#"
+            class="bg-aityellow hover:bg-yellow-600 text-aitblue font-bold py-3 
+                   px-8 rounded-lg text-lg transition duration-300"
+            >Apply Now</a
+          >
+          <a
+            href="#"
+            class="bg-transparent hover:bg-white hover:text-aitblue border-2 border-white 
+                   text-white font-bold py-3 px-8 rounded-lg text-lg transition duration-300"
+            >Learn More</a
+          >
         </div>
+      </div>
     </section>
 
     <!-- Features Section -->
     <section class="py-16 bg-white">
-        <div class="container mx-auto px-6">
-            <h2 class="text-3xl font-serif font-bold text-center text-aitblue mb-12">Why Choose AIT?</h2>
-            <div class="grid md:grid-cols-3 gap-10">
-                <div class="text-center p-6 rounded-lg hover:shadow-lg transition duration-300">
-                    <div class="bg-aitblue text-white w-16 h-16 mx-auto rounded-full flex items-center justify-center mb-4">
-                        <img src="icons/check-circle.svg" alt="Edexcel Curriculum" class="h-8 w-8">
-                    </div>
-                    <h3 class="text-xl font-bold mb-3 text-gray-800">Edexcel Curriculum</h3>
-                    <p class="text-gray-600">Internationally recognized British curriculum that prepares students for IGCSE, A-Levels, and global universities.</p>
-                </div>
-                <div class="text-center p-6 rounded-lg hover:shadow-lg transition duration-300">
-                    <div class="bg-aitblue text-white w-16 h-16 mx-auto rounded-full flex items-center justify-center mb-4">
-                        <img src="icons/globe.svg" alt="Global Perspective" class="h-8 w-8">
-                    </div>
-                    <h3 class="text-xl font-bold mb-3 text-gray-800">Global Perspective</h3>
-                    <p class="text-gray-600">Education that combines international standards with local Bangladeshi context and Islamic values.</p>
-                </div>
-                <div class="text-center p-6 rounded-lg hover:shadow-lg transition duration-300">
-                    <div class="bg-aitblue text-white w-16 h-16 mx-auto rounded-full flex items-center justify-center mb-4">
-                        <img src="icons/users.svg" alt="Experienced Faculty" class="h-8 w-8">
-                    </div>
-                    <h3 class="text-xl font-bold mb-3 text-gray-800">Experienced Faculty</h3>
-                    <p class="text-gray-600">Our teachers are highly qualified with international experience and a passion for student success.</p>
-                </div>
+      <div class="container mx-auto px-6">
+        <h2
+          class="text-3xl font-serif font-bold text-center text-aitblue mb-12"
+        >
+          Why Choose AIT?
+        </h2>
+        <div class="grid md:grid-cols-3 gap-10">
+          <div
+            class="text-center p-6 rounded-lg hover:shadow-lg transition duration-300"
+          >
+            <div
+              class="bg-aitblue text-white w-16 h-16 mx-auto rounded-full flex items-center 
+                     justify-center mb-4"
+            >
+              <img
+                src="icons/check-circle.svg"
+                alt="Edexcel Curriculum"
+                class="h-8 w-8"
+              />
             </div>
+            <h3 class="text-xl font-bold mb-3 text-gray-800">
+              Edexcel Curriculum
+            </h3>
+            <p class="text-gray-600">
+              Internationally recognized British curriculum that prepares
+              students for IGCSE, A-Levels, and global universities.
+            </p>
+          </div>
+          <div
+            class="text-center p-6 rounded-lg hover:shadow-lg transition duration-300"
+          >
+            <div
+              class="bg-aitblue text-white w-16 h-16 mx-auto rounded-full flex items-center justify-center mb-4"
+            >
+              <img
+                src="icons/globe.svg"
+                alt="Global Perspective"
+                class="h-8 w-8"
+              />
+            </div>
+            <h3 class="text-xl font-bold mb-3 text-gray-800">
+              Global Perspective
+            </h3>
+            <p class="text-gray-600">
+              Education that combines international standards with local
+              Bangladeshi context and Islamic values.
+            </p>
+          </div>
+          <div
+            class="text-center p-6 rounded-lg hover:shadow-lg transition duration-300"
+          >
+            <div
+              class="bg-aitblue text-white w-16 h-16 mx-auto rounded-full flex items-center justify-center mb-4"
+            >
+              <img
+                src="icons/users.svg"
+                alt="Experienced Faculty"
+                class="h-8 w-8"
+              />
+            </div>
+            <h3 class="text-xl font-bold mb-3 text-gray-800">
+              Experienced Faculty
+            </h3>
+            <p class="text-gray-600">
+              Our teachers are highly qualified with international experience
+              and a passion for student success.
+            </p>
+          </div>
         </div>
+      </div>
     </section>
 
     <!-- Student Goals Section -->
     <section class="py-16 bg-gray-100">
-        <div class="container mx-auto px-6">
-            <h2 class="text-3xl font-serif font-bold text-center text-aitblue mb-12">Our Goals for Students</h2>
-            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition duration-300">
-                    <div class="flex items-center mb-4">
-                        <div class="bg-aitgreen text-white p-3 rounded-lg mr-4">
-                            <img src="icons/arrow-up.svg" alt="English Proficiency" class="h-6 w-6">
-                        </div>
-                        <h3 class="text-xl font-bold text-gray-800">English Proficiency</h3>
-                    </div>
-                    <p class="text-gray-600">Develop fluent English communication skills for academic and professional success worldwide.</p>
-                </div>
-                <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition duration-300">
-                    <div class="flex items-center mb-4">
-                        <div class="bg-aitgreen text-white p-3 rounded-lg mr-4">
-                            <img src="icons/book-open.svg" alt="Quranic Studies" class="h-6 w-6">
-                        </div>
-                        <h3 class="text-xl font-bold text-gray-800">Quranic Studies</h3>
-                    </div>
-                    <p class="text-gray-600">Build strong foundation in Quran recitation, memorization, and understanding with proper tajweed.</p>
-                </div>
-                <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition duration-300">
-                    <div class="flex items-center mb-4">
-                        <div class="bg-aitgreen text-white p-3 rounded-lg mr-4">
-                            <img src="icons/academic-cap.svg" alt="Academic Excellence" class="h-6 w-6">
-                        </div>
-                        <h3 class="text-xl font-bold text-gray-800">Academic Excellence</h3>
-                    </div>
-                    <p class="text-gray-600">Achieve outstanding results in Edexcel IGCSE and A-Level examinations.</p>
-                </div>
-                <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition duration-300">
-                    <div class="flex items-center mb-4">
-                        <div class="bg-aitgreen text-white p-3 rounded-lg mr-4">
-                            <img src="icons/shield-check.svg" alt="Islamic Values" class="h-6 w-6">
-                        </div>
-                        <h3 class="text-xl font-bold text-gray-800">Islamic Values</h3>
-                    </div>
-                    <p class="text-gray-600">Cultivate strong Islamic character, ethics, and identity alongside modern education.</p>
-                </div>
-                <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition duration-300">
-                    <div class="flex items-center mb-4">
-                        <div class="bg-aitgreen text-white p-3 rounded-lg mr-4">
-                            <img src="icons/globe-asia.svg" alt="Global Citizenship" class="h-6 w-6">
-                        </div>
-                        <h3 class="text-xl font-bold text-gray-800">Global Citizenship</h3>
-                    </div>
-                    <p class="text-gray-600">Develop awareness and skills to thrive in an interconnected world while maintaining cultural roots.</p>
-                </div>
-                <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition duration-300">
-                    <div class="flex items-center mb-4">
-                        <div class="bg-aitgreen text-white p-3 rounded-lg mr-4">
-                            <img src="icons/light-bulb.svg" alt="Critical Thinking" class="h-6 w-6">
-                        </div>
-                        <h3 class="text-xl font-bold text-gray-800">Critical Thinking</h3>
-                    </div>
-                    <p class="text-gray-600">Foster analytical skills and problem-solving abilities essential for higher education and life.</p>
-                </div>
+      <div class="container mx-auto px-6">
+        <h2
+          class="text-3xl font-serif font-bold text-center text-aitblue mb-12"
+        >
+          Our Goals for Students
+        </h2>
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div
+            class="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition duration-300"
+          >
+            <div class="flex items-center mb-4">
+              <div class="bg-aitgreen text-white p-3 rounded-lg mr-4">
+                <img
+                  src="icons/arrow-up.svg"
+                  alt="English Proficiency"
+                  class="h-6 w-6"
+                />
+              </div>
+              <h3 class="text-xl font-bold text-gray-800">
+                English Proficiency
+              </h3>
             </div>
+            <p class="text-gray-600">
+              Develop fluent English communication skills for academic and
+              professional success worldwide.
+            </p>
+          </div>
+          <div
+            class="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition duration-300"
+          >
+            <div class="flex items-center mb-4">
+              <div class="bg-aitgreen text-white p-3 rounded-lg mr-4">
+                <img
+                  src="icons/book-open.svg"
+                  alt="Quranic Studies"
+                  class="h-6 w-6"
+                />
+              </div>
+              <h3 class="text-xl font-bold text-gray-800">Quranic Studies</h3>
+            </div>
+            <p class="text-gray-600">
+              Build strong foundation in Quran recitation, memorization, and
+              understanding with proper tajweed.
+            </p>
+          </div>
+          <div
+            class="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition duration-300"
+          >
+            <div class="flex items-center mb-4">
+              <div class="bg-aitgreen text-white p-3 rounded-lg mr-4">
+                <img
+                  src="icons/academic-cap.svg"
+                  alt="Academic Excellence"
+                  class="h-6 w-6"
+                />
+              </div>
+              <h3 class="text-xl font-bold text-gray-800">
+                Academic Excellence
+              </h3>
+            </div>
+            <p class="text-gray-600">
+              Achieve outstanding results in Edexcel IGCSE and A-Level
+              examinations.
+            </p>
+          </div>
+          <div
+            class="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition duration-300"
+          >
+            <div class="flex items-center mb-4">
+              <div class="bg-aitgreen text-white p-3 rounded-lg mr-4">
+                <img
+                  src="icons/shield-check.svg"
+                  alt="Islamic Values"
+                  class="h-6 w-6"
+                />
+              </div>
+              <h3 class="text-xl font-bold text-gray-800">Islamic Values</h3>
+            </div>
+            <p class="text-gray-600">
+              Cultivate strong Islamic character, ethics, and identity alongside
+              modern education.
+            </p>
+          </div>
+          <div
+            class="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition duration-300"
+          >
+            <div class="flex items-center mb-4">
+              <div class="bg-aitgreen text-white p-3 rounded-lg mr-4">
+                <img
+                  src="icons/globe-asia.svg"
+                  alt="Global Citizenship"
+                  class="h-6 w-6"
+                />
+              </div>
+              <h3 class="text-xl font-bold text-gray-800">
+                Global Citizenship
+              </h3>
+            </div>
+            <p class="text-gray-600">
+              Develop awareness and skills to thrive in an interconnected world
+              while maintaining cultural roots.
+            </p>
+          </div>
+          <div
+            class="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition duration-300"
+          >
+            <div class="flex items-center mb-4">
+              <div class="bg-aitgreen text-white p-3 rounded-lg mr-4">
+                <img
+                  src="icons/light-bulb.svg"
+                  alt="Critical Thinking"
+                  class="h-6 w-6"
+                />
+              </div>
+              <h3 class="text-xl font-bold text-gray-800">Critical Thinking</h3>
+            </div>
+            <p class="text-gray-600">
+              Foster analytical skills and problem-solving abilities essential
+              for higher education and life.
+            </p>
+          </div>
         </div>
+      </div>
     </section>
 
     <!-- Edexcel Curriculum Section -->
     <section class="py-16 bg-white">
-        <div class="container mx-auto px-6">
-            <div class="flex flex-col md:flex-row items-center">
-                <div class="md:w-1/2 mb-8 md:mb-0 md:pr-10">
-                    <h2 class="text-3xl font-serif font-bold text-aitblue mb-6">Edexcel International Curriculum</h2>
-                    <p class="text-gray-600 mb-4">AIT proudly offers the Pearson Edexcel curriculum, one of the most respected British educational programs worldwide.</p>
-                    <ul class="space-y-3 mb-6">
-                        <li class="flex items-start">
-                            <img src="icons/check.svg" alt="Check" class="h-5 w-5 text-aitgreen mr-2 mt-1">
-                            <span class="text-gray-700">Internationally recognized qualifications accepted by universities worldwide</span>
-                        </li>
-                        <li class="flex items-start">
-                            <img src="icons/check.svg" alt="Check" class="h-5 w-5 text-aitgreen mr-2 mt-1">
-                            <span class="text-gray-700">Rigorous academic standards that challenge and inspire students</span>
-                        </li>
-                        <li class="flex items-start">
-                            <img src="icons/check.svg" alt="Check" class="h-5 w-5 text-aitgreen mr-2 mt-1">
-                            <span class="text-gray-700">Comprehensive assessment methods that evaluate true understanding</span>
-                        </li>
-                        <li class="flex items-start">
-                            <img src="icons/check.svg" alt="Check" class="h-5 w-5 text-aitgreen mr-2 mt-1">
-                            <span class="text-gray-700">Seamless progression from primary through secondary education</span>
-                        </li>
-                    </ul>
-                    <a href="#" class="inline-block bg-aitblue hover:bg-blue-700 text-white font-bold py-2 px-6 rounded-lg transition duration-300">Learn About Our Curriculum</a>
-                </div>
-                <div class="md:w-1/2 bg-gray-100 p-8 rounded-lg">
-                    <h3 class="text-xl font-bold text-aitblue mb-4">Our Academic Pathway</h3>
-                    <div class="space-y-4">
-                        <div class="border-l-4 border-aityellow pl-4 py-2">
-                            <h4 class="font-bold text-gray-800">Primary Years (5-11)</h4>
-                            <p class="text-gray-600">Building strong foundations in core subjects with Edexcel Primary curriculum</p>
-                        </div>
-                        <div class="border-l-4 border-aitblue pl-4 py-2">
-                            <h4 class="font-bold text-gray-800">Lower Secondary (11-14)</h4>
-                            <p class="text-gray-600">Edexcel Lower Secondary program preparing for IGCSE</p>
-                        </div>
-                        <div class="border-l-4 border-aityellow pl-4 py-2">
-                            <h4 class="font-bold text-gray-800">IGCSE (14-16)</h4>
-                            <p class="text-gray-600">Internationally recognized qualifications with 8-10 subject choices</p>
-                        </div>
-                        <div class="border-l-4 border-aitblue pl-4 py-2">
-                            <h4 class="font-bold text-gray-800">A-Levels (16-18)</h4>
-                            <p class="text-gray-600">Gold standard preparation for top universities worldwide</p>
-                        </div>
-                    </div>
-                </div>
+      <div class="container mx-auto px-6">
+        <div class="flex flex-col md:flex-row items-center">
+          <div class="md:w-1/2 mb-8 md:mb-0 md:pr-10">
+            <h2 class="text-3xl font-serif font-bold text-aitblue mb-6">
+              Edexcel International Curriculum
+            </h2>
+            <p class="text-gray-600 mb-4">
+              AIT proudly offers the Pearson Edexcel curriculum, one of the most
+              respected British educational programs worldwide.
+            </p>
+            <ul class="space-y-3 mb-6">
+              <li class="flex items-start">
+                <img
+                  src="icons/check.svg"
+                  alt="Check"
+                  class="h-5 w-5 text-aitgreen mr-2 mt-1"
+                />
+                <span class="text-gray-700"
+                  >Internationally recognized qualifications accepted by
+                  universities worldwide</span
+                >
+              </li>
+              <li class="flex items-start">
+                <img
+                  src="icons/check.svg"
+                  alt="Check"
+                  class="h-5 w-5 text-aitgreen mr-2 mt-1"
+                />
+                <span class="text-gray-700"
+                  >Rigorous academic standards that challenge and inspire
+                  students</span
+                >
+              </li>
+              <li class="flex items-start">
+                <img
+                  src="icons/check.svg"
+                  alt="Check"
+                  class="h-5 w-5 text-aitgreen mr-2 mt-1"
+                />
+                <span class="text-gray-700"
+                  >Comprehensive assessment methods that evaluate true
+                  understanding</span
+                >
+              </li>
+              <li class="flex items-start">
+                <img
+                  src="icons/check.svg"
+                  alt="Check"
+                  class="h-5 w-5 text-aitgreen mr-2 mt-1"
+                />
+                <span class="text-gray-700"
+                  >Seamless progression from primary through secondary
+                  education</span
+                >
+              </li>
+            </ul>
+            <a
+              href="#"
+              class="inline-block bg-aitblue hover:bg-blue-700 text-white font-bold 
+                     py-2 px-6 rounded-lg transition duration-300"
+              >Learn About Our Curriculum</a
+            >
+          </div>
+          <div class="md:w-1/2 bg-gray-100 p-8 rounded-lg">
+            <h3 class="text-xl font-bold text-aitblue mb-4">
+              Our Academic Pathway
+            </h3>
+            <div class="space-y-4">
+              <div class="border-l-4 border-aityellow pl-4 py-2">
+                <h4 class="font-bold text-gray-800">Primary Years (5-11)</h4>
+                <p class="text-gray-600">
+                  Building strong foundations in core subjects with Edexcel
+                  Primary curriculum
+                </p>
+              </div>
+              <div class="border-l-4 border-aitblue pl-4 py-2">
+                <h4 class="font-bold text-gray-800">Lower Secondary (11-14)</h4>
+                <p class="text-gray-600">
+                  Edexcel Lower Secondary program preparing for IGCSE
+                </p>
+              </div>
+              <div class="border-l-4 border-aityellow pl-4 py-2">
+                <h4 class="font-bold text-gray-800">IGCSE (14-16)</h4>
+                <p class="text-gray-600">
+                  Internationally recognized qualifications with 8-10 subject
+                  choices
+                </p>
+              </div>
+              <div class="border-l-4 border-aitblue pl-4 py-2">
+                <h4 class="font-bold text-gray-800">A-Levels (16-18)</h4>
+                <p class="text-gray-600">
+                  Gold standard preparation for top universities worldwide
+                </p>
+              </div>
             </div>
+          </div>
         </div>
+      </div>
     </section>
 
     <!-- Call to Action -->
     <section class="py-16 bg-aitblue text-white">
-        <div class="container mx-auto px-6 text-center">
-            <h2 class="text-3xl font-serif font-bold mb-6">Begin Your Educational Journey at AIT</h2>
-            <p class="text-xl mb-8 max-w-2xl mx-auto">Schedule a campus visit or speak with our admissions team to learn more about our Edexcel programs.</p>
-            <div class="flex flex-col sm:flex-row justify-center gap-4">
-                <a href="#" class="bg-white hover:bg-gray-100 text-aitblue font-bold py-3 px-8 rounded-lg text-lg transition duration-300">Contact Admissions</a>
-                <a href="#" class="bg-transparent hover:bg-aityellow hover:text-aitblue border-2 border-white text-white font-bold py-3 px-8 rounded-lg text-lg transition duration-300">Download Prospectus</a>
-            </div>
+      <div class="container mx-auto px-6 text-center">
+        <h2 class="text-3xl font-serif font-bold mb-6">
+          Begin Your Educational Journey at AIT
+        </h2>
+        <p class="text-xl mb-8 max-w-2xl mx-auto">
+          Schedule a campus visit or speak with our admissions team to learn
+          more about our Edexcel programs.
+        </p>
+        <div class="flex flex-col sm:flex-row justify-center gap-4">
+          <a
+            href="#"
+            class="bg-white hover:bg-gray-100 text-aitblue font-bold py-3 px-8 
+                   rounded-lg text-lg transition duration-300"
+            >Contact Admissions</a
+          >
+          <a
+            href="#"
+            class="bg-transparent hover:bg-aityellow hover:text-aitblue border-2 
+                   border-white text-white font-bold py-3 px-8 rounded-lg text-lg 
+                   transition duration-300"
+            >Download Prospectus</a
+          >
         </div>
+      </div>
     </section>
 
     <!-- Footer -->
     <footer class="bg-gray-900 text-white py-12">
-        <div class="container mx-auto px-6">
-            <div class="grid md:grid-cols-3 gap-8">
-                <div>
-                    <h3 class="text-xl font-serif font-bold mb-4 text-aityellow">American International Tutorial</h3>
-                    <p class="mb-4">Providing world-class British education in Bangladesh since 2010.</p>
-                    <div class="flex space-x-4">
-                        <a href="#" class="text-gray-400 hover:text-white">
-                            <img src="icons/twitter.svg" alt="Twitter" class="h-6 w-6">
-                        </a>
-                        <a href="#" class="text-gray-400 hover:text-white">
-                            <img src="icons/instagram.svg" alt="Instagram" class="h-6 w-6">
-                        </a>
-                        <a href="#" class="text-gray-400 hover:text-white">
-                            <img src="icons/linkedin.svg" alt="LinkedIn" class="h-6 w-6">
-                        </a>
-                    </div>
-                </div>
-                <div>
-                    <h4 class="text-lg font-bold mb-4">Quick Links</h4>
-                    <ul class="space-y-2">
-                        <li><a href="#" class="text-gray-400 hover:text-white">Home</a></li>
-                        <li><a href="#" class="text-gray-400 hover:text-white">About Us</a></li>
-                        <li><a href="#" class="text-gray-400 hover:text-white">Edexcel Curriculum</a></li>
-                        <li><a href="#" class="text-gray-400 hover:text-white">Admissions</a></li>
-                        <li><a href="#" class="text-gray-400 hover:text-white">Student Life</a></li>
-                    </ul>
-                </div>
-                <div>
-                    <h4 class="text-lg font-bold mb-4">Contact Us</h4>
-                    <address class="not-italic">
-                        <p class="mb-2">123 School Road, Dhanmondi</p>
-                        <p class="mb-2">Dhaka, Bangladesh</p>
-                        <p class="mb-2">Phone: +880 2-XXXXXXX</p>
-                        <p class="mb-2">Mobile: +880 1XXXXXXXXX</p>
-                        <p class="mb-2">Email: admissions@ait.edu.bd</p>
-                    </address>
-                </div>
+      <div class="container mx-auto px-6">
+        <div class="grid md:grid-cols-3 gap-8">
+          
+          <div>
+            <div>
+              <img class="h-20 w-20" src="icons/logo.svg" alt="AIT Logo">
             </div>
-            <div class="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
-                <p>&copy; 2023 American International Tutorial. All rights reserved.</p>
+            <h3 class="text-xl font-serif font-bold mb-4 text-aityellow">
+              American International Tutorial
+            </h3>
+            <p class="mb-4">
+              Providing world-class British education in Bangladesh since 2023.
+            </p>
+            <div class="flex space-x-4">
+              
+              <a href="#" class="text-gray-400 hover:text-white">
+                <img
+                  src="icons/facebook.svg"
+                  alt="Facebook"
+                  class="h-6 w-6"
+                />
+              </a>
+              <a href="#" class="text-gray-400 hover:text-white">
+                <img src="icons/whattsapp.svg" alt="Whatsapp" class="h-6 w-6" />
+              </a>
             </div>
+          </div>
+          
+          <div>
+            <h4 class="text-lg font-bold mb-4">Quick Links</h4>
+            <ul class="space-y-2">
+              <li>
+                <a href="#" class="text-gray-400 hover:text-white">Home</a>
+              </li>
+              <li>
+                <a href="#" class="text-gray-400 hover:text-white">About Us</a>
+              </li>
+              <li>
+                <a href="#" class="text-gray-400 hover:text-white"
+                  >Edexcel Curriculum</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-gray-400 hover:text-white"
+                  >Admissions</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-gray-400 hover:text-white"
+                  >Student Life</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h4 class="text-lg font-bold mb-4">Contact Us</h4>
+            <address class="not-italic">
+              <p class="mb-2">123 School Road, Demra</p>
+              <p class="mb-2">Dhaka, Bangladesh</p>
+              <p class="mb-2">Phone: +880 2-XXXXXXX</p>
+              <p class="mb-2">Mobile: +880 1XXXXXXXXX</p>
+              <p class="mb-2">Email: admissions@aitschool.org</p>
+            </address>
+          </div>
         </div>
+        <div
+          class="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400"
+        >
+          <p>
+            &copy; 2025 American International Tutorial. All rights reserved.
+          </p>
+        </div>
+      </div>
     </footer>
 
     <script>
-        // Mobile menu toggle
-        const mobileMenuButton = document.getElementById('mobile-menu-button');
-        const mobileMenu = document.getElementById('mobile-menu');
-        
-        mobileMenuButton.addEventListener('click', () => {
-            mobileMenu.classList.toggle('hidden');
-        });
+      // Mobile menu toggle
+      const mobileMenuButton = document.getElementById("mobile-menu-button");
+      const mobileMenu = document.getElementById("mobile-menu");
+
+      mobileMenuButton.addEventListener("click", () => {
+        mobileMenu.classList.toggle("hidden");
+      });
     </script>
-</body>
+  </body>
 </html>
